@@ -1,0 +1,62 @@
+{
+  "dog_barks": {
+    "file": "dog_barks.mp3",
+    "original": "Animals, Dog, Barks, Next Door SND0581.wav"
+  },
+  "night_ambience": {
+    "file": "night_ambience.mp3",
+    "original": "Ambience, Rural, Crickets Distant, Bats, Frogs, Dog Barks SND0444.wav"
+  },
+  "siren": {
+    "file": "siren.mp3",
+    "original": "Siren.mp3"
+  },
+  "ambulance": {
+    "file": "ambulance.mp3",
+    "original": "Ambulance.wav"
+  },
+  "ceiling_fan": {
+    "file": "ceiling_fan.mp3",
+    "original": "Ceiling fan.wav"
+  },
+  "wedding": {
+    "file": "wedding.mp3",
+    "original": "Wedding sound.mp3"
+  },
+  "dog_whine": {
+    "file": "dog_whine.mp3",
+    "original": "Dog whine.mp3"
+  },
+  "child_cry_1": {
+    "file": "child_cry_1.mp3",
+    "original": "Voices, Baby, Crying .mp3"
+  },
+  "child_cry_2": {
+    "file": "child_cry_2.mp3",
+    "original": "Voices, Baby, Crying 05 SND47303.mp3"
+  },
+  "train_running": {
+    "file": "train_running.mp3",
+    "original": "Train running distant sound.mp3"
+  },
+  "train_horn": {
+    "file": "train_horn.mp3",
+    "original": "Train horn.mp3"
+  },
+  "wind": {
+    "file": "wind.mp3",
+    "original": "Wind, Gust, Cold, Strong Wind, Gale, Night SND137534 1.wav"
+  },
+  "cough_female": {
+    "file": "cough_female.mp3",
+    "original": "Human, Cough, Female 01 SND0617 1.wav"
+  },
+  "cough_male_1": {
+    "file": "cough_male_1.mp3",
+    "original": "Human, Cough, Male 03 SND12821 5.wav"
+  },
+  "cough_male_2": {
+    "file": "cough_male_2.mp3",
+    "original": "Human, Cough, Male 03 SND12821 3.wav"
+  }
+}

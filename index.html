@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="An experimental, scroll-driven spatial sound narrative about the Bhopal Gas Tragedy.">
+  <title>The Night Bhopal Went Silent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar" id="topbar">
+    <a class="wordmark" href="#top" aria-label="Return to beginning">BHOPAL / 1984</a>
+    <div class="topbar-right">
+      <span class="headphone-note">HEADPHONES RECOMMENDED</span>
+      <button id="pauseButton" class="text-button" disabled>Pause sound</button>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="entry" id="entry">
+      <div class="entry-grain" aria-hidden="true"></div>
+      <p class="eyebrow">AN INTERACTIVE SOUND NARRATIVE</p>
+      <h1>The night<br><em>Bhopal</em> went silent.</h1>
+      <p class="entry-copy">An ordinary night. A world slowly disappearing.<br>A historical tragedy that did not end with the silence.</p>
+      <button id="beginButton" class="begin-button">
+        <span class="button-dot"></span><span>Begin listening</span><span aria-hidden="true">↗</span>
+      </button>
+      <p class="microcopy">Use headphones for the spatial audio experience.<br>Scroll slowly. You can pause at any time.</p>
+      <div class="entry-bottom"><span>02—03 DECEMBER 1984</span><span>SCROLL TO ENTER ↓</span></div>
+    </section>
+
+    <section class="experience" id="experience" aria-label="Interactive sound narrative">
+      <div class="sticky-stage">
+        <div class="room-scene" id="roomScene" aria-hidden="true">
+          <svg class="room-art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="First-person view from a bed, looking at an old ceiling fan on a stained ceiling in a modest old Indian city room, with yellow streetlight entering through a barred window">
+            <defs>
+              <linearGradient id="ceilingPaint" x1="0" y1="0" x2="0.15" y2="1"><stop stop-color="#777064"/><stop offset=".52" stop-color="#4e4a42"/><stop offset="1" stop-color="#282723"/></linearGradient>
+              <radialGradient id="streetGlow" cx=".15" cy=".52" r=".9"><stop stop-color="#d7a34c" stop-opacity=".55"/><stop offset=".48" stop-color="#a96d2c" stop-opacity=".16"/><stop offset="1" stop-color="#171713" stop-opacity="0"/></radialGradient>
+              <linearGradient id="wallPaint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#51483a"/><stop offset="1" stop-color="#201f1b"/></linearGradient>
+              <linearGradient id="bladePaint" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9b9688"/><stop offset=".4" stop-color="#625f56"/><stop offset="1" stop-color="#282824"/></linearGradient>
+              <filter id="softGlow"><feGaussianBlur stdDeviation="38"/></filter>
+              <filter id="plasterTexture"><feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="3"/><feColorMatrix values=".35 0 0 0 .2 .35 0 0 0 .18 .35 0 0 0 .12 0 0 0 .13 0"/></filter>
+              <filter id="fanShadow"><feGaussianBlur stdDeviation="8"/></filter>
+            </defs>
+            <rect width="1440" height="900" fill="#151512"/>
+            <path d="M0 0H1440V585L1160 665H270L0 560Z" fill="url(#ceilingPaint)"/>
+            <path d="M0 0H1440V585L1160 665H270L0 560Z" filter="url(#plasterTexture)" opacity=".22"/>
+            <path d="M0 560L270 665H1160L1440 585V900H0Z" fill="url(#wallPaint)"/>
+            <path d="M0 555L270 660M1440 580L1160 660" stroke="#8b7c60" stroke-opacity=".22" stroke-width="7"/>
+            <path d="M0 575L270 674H1160L1440 594" fill="none" stroke="#171713" stroke-width="15" opacity=".7"/>
+            <g opacity=".35" stroke="#b1a48b" stroke-width="2" fill="none"><path d="M145 65l34 14 21 32-12 22"/><path d="M1180 70l-18 32 10 24-22 18"/><path d="M680 92l-19 20 8 21-28 18"/><path d="M370 420l-25 17 8 23-20 15"/></g>
+            <ellipse cx="250" cy="515" rx="370" ry="260" fill="#d49a42" opacity=".28" filter="url(#softGlow)"/>
+            <rect x="0" y="0" width="1440" height="900" fill="url(#streetGlow)"/>
+            <g class="street-window" transform="translate(0 0)">
+              <path d="M0 555V320L165 284L248 332V635L0 570Z" fill="#171a17" stroke="#8e7956" stroke-width="9"/>
+              <path d="M12 548V332L155 302L229 342V614Z" fill="#292d25"/>
+              <path d="M12 548V332L155 302L229 342V614Z" fill="#d69b3d" opacity=".3"/>
+              <g fill="#1b1e1a" opacity=".95"><path d="M14 506l38-76 22 22 25-60 35 45 27-70 30 56 35-12v160H14Z"/><rect x="33" y="420" width="26" height="74"/><rect x="87" y="393" width="32" height="95"/><rect x="149" y="415" width="28" height="79"/></g>
+              <g stroke="#77684e" stroke-width="9" opacity=".9"><path d="M57 314V574M116 305V594M175 318V604M15 405L232 420M13 485L233 501"/></g>
+              <path d="M0 566L252 638" stroke="#b28a4d" stroke-opacity=".4" stroke-width="5"/>
+            </g>
+            <g opacity=".35" fill="#131512"><path d="M1100 660v-86h38v86M1146 660V548h58v112M1212 660v-73h41v73M1270 660V525h62v135M1341 660v-92h42v92"/><path d="M1137 575l-18-20 18-20 18 20ZM1268 530l33-31 33 31Z"/></g>
+            <g class="fan-shadow" transform="translate(760 292)" opacity=".48" filter="url(#fanShadow)"><ellipse rx="250" ry="35" fill="#090908"/></g>
+            <g class="fan-assembly" transform="translate(760 282)">
+              <path d="M-18 -180H18L11 -18H-11Z" fill="#383832" stroke="#8c8779" stroke-width="3"/>
+              <path d="M-8 -178H8L4 -30H-4Z" fill="#a6a08f" opacity=".25"/>
+              <ellipse cy="-8" rx="44" ry="19" fill="#191a17" stroke="#9d9787" stroke-width="4"/>
+              <ellipse cy="-12" rx="29" ry="12" fill="#777265" stroke="#282923" stroke-width="4"/>
+              <g class="fan-rotor">
+                <ellipse cy="0" rx="28" ry="22" fill="#37372f" stroke="#aaa38e" stroke-width="4"/>
+                <ellipse cy="0" rx="12" ry="10" fill="#b4aa92" stroke="#38382f" stroke-width="3"/>
+                <g fill="url(#bladePaint)" stroke="#a8a18e" stroke-width="3" stroke-linejoin="round">
+                  <path d="M18 -7C60 -26 130 -42 221 -34Q242 -31 235 -12C176 7 95 19 22 9Z"/>
+                  <path d="M-10 17C-31 61 -42 130 -24 220Q-19 241 0 229C18 168 22 94 8 18Z"/>
+                  <path d="M-18 -7C-62 -28 -132 -41 -220 -24Q-242 -19 -230 0C-171 17 -96 19 -20 9Z"/>
+                </g>
+                <g fill="none" stroke="#d0c7b2" stroke-opacity=".28" stroke-width="2"><path d="M40 -9Q133 -31 218 -24"/><path d="M-3 43Q-31 137 -19 215"/><path d="M-42 -8Q-130 -28 -215 -15"/></g>
+              </g>
+            </g>
+            <g opacity=".16" fill="#d8b77d"><circle cx="410" cy="160" r="2"/><circle cx="980" cy="380" r="2"/><circle cx="520" cy="510" r="1.5"/><circle cx="1040" cy="125" r="1.5"/></g>
+            <rect width="1440" height="900" fill="none" stroke="#050504" stroke-width="100" opacity=".38"/>
+          </svg>
+          <div class="eye-blink" id="eyeBlink"><span></span><span></span></div>
+          <div class="blur-haze" id="blurHaze"></div>
+        </div>
+        <div class="scene-vignette" aria-hidden="true"></div>
+        <div class="scene-heading">
+          <p class="eyebrow" id="sceneNumber">01 / THE ORDINARY NIGHT</p>
+          <h2 id="sceneTitle">A city is going to sleep.</h2>
+          <p id="sceneDescription">A fan turns overhead. Somewhere, a wedding continues.</p>
+        </div>
+        <div class="stage-caption" id="stageCaption">EYES OPEN <span>·</span> THE ORDINARY NIGHT</div>
+        <div class="bottom-ui">
+          <div class="progress-track"><span id="progressFill"></span></div>
+          <div class="bottom-meta"><span id="progressLabel">THE NIGHT / 01</span><span>SCROLL TO CONTINUE ↓</span></div>
+        </div>
+        <div class="loading-overlay" id="loadingOverlay">
+          <div class="loader-ring"></div>
+          <p>Preparing the soundscape…</p>
+          <p class="loading-small">Audio is loaded locally in your browser.</p>
+        </div>
+        <div class="sound-error" id="soundError" hidden></div>
+      </div>
+
+      <div class="scroll-track" aria-hidden="true">
+        <div class="scroll-chapter" data-progress="0.02"></div>
+        <div class="scroll-chapter" data-progress="0.20"></div>
+        <div class="scroll-chapter" data-progress="0.40"></div>
+        <div class="scroll-chapter" data-progress="0.60"></div>
+        <div class="scroll-chapter" data-progress="0.80"></div>
+      </div>
+    </section>
+
+    <section class="history" id="history">
+      <div class="history-intro">
+        <p class="eyebrow">AFTER THE SILENCE</p>
+        <h2>This was not<br>one person's story.</h2>
+        <p class="history-lede">The soundscape you have just experienced is an artistic reconstruction. What happened in Bhopal was real, and its consequences extended far beyond one night.</p>
+        <div class="history-scroll-cue">CONTINUE FOR THE HISTORICAL RECORD ↓</div>
+      </div>
+
+      <article class="history-block">
+        <p class="history-index">01 — THE DISASTER</p>
+        <h3>A leak in the night.</h3>
+        <p>During the night of 2–3 December 1984, toxic gas escaped from the Union Carbide India Limited pesticide plant in Bhopal, India. Methyl isocyanate (MIC) was among the chemicals involved. The gas spread into densely populated areas around the plant while many residents were asleep.</p>
+        <p class="source-line">Read more: <a href="https://www.britannica.com/event/Bhopal-disaster" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica — Bhopal disaster</a></p>
+      </article>
+
+      <article class="history-block history-stat">
+        <p class="history-index">02 — THE SCALE</p>
+        <p class="stat-number">500,000+</p>
+        <h3>People exposed to toxic gas.</h3>
+        <p>Published estimates vary according to how exposure, injury, and long-term effects are counted. Amnesty International's reporting on the disaster describes more than half a million people exposed to damaging levels of gas. The figure is presented here as a reported estimate, not a precise count of every person affected.</p>
+        <p class="source-line">Read more: <a href="https://www.amnesty.org/" target="_blank" rel="noopener noreferrer">Amnesty International</a> — search its Bhopal Gas Tragedy reporting.</p>
+      </article>
+
+      <article class="history-block">
+        <p class="history-index">03 — THE DEATH TOLL</p>
+        <h3>The numbers are not the whole story.</h3>
+        <p>Official death counts and broader estimates differ, in part because sources use different time periods and definitions. The immediate deaths were followed by years of illness, bereavement, disability, and community struggle. Any death toll should be read alongside its source and the definition it uses.</p>
+        <p class="source-line">Research starting points: <a href="https://www.britannica.com/event/Bhopal-disaster" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica</a> and <a href="https://www.amnesty.org/" target="_blank" rel="noopener noreferrer">Amnesty International</a>.</p>
+      </article>
+
+      <article class="history-block">
+        <p class="history-index">04 — THE AFTERMATH</p>
+        <h3>The night ended. The consequences did not.</h3>
+        <p>Survivors and their families have continued to seek healthcare, compensation, environmental remediation, and accountability. The disaster remains a warning about industrial safety, corporate responsibility, emergency planning, and the vulnerability of communities living near hazardous facilities.</p>
+        <p class="source-line">This section is a starting point for research. Replace or expand it with verified primary sources, survivor testimony, and locally grounded reporting before publication.</p>
+      </article>
+
+      <footer class="end-note">
+        <p class="eyebrow">END OF EXPERIENCE</p>
+        <h2>Remember the people.<br>Question the systems.</h2>
+        <p>This webpage uses designed and sourced environmental audio to create an imagined first-person perspective. It is not an authentic recording of the night or the testimony of a specific victim.</p>
+        <button id="restartButton" class="begin-button"><span class="button-dot"></span><span>Return to the beginning</span><span aria-hidden="true">↗</span></button>
+        <p class="credits">SOUND SOURCES: USER-PROVIDED AUDIO FILES · HISTORICAL SOURCES LINKED ABOVE</p>
+      </footer>
+    </section>
+  </main>
+  <script src="js/audio-engine.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
